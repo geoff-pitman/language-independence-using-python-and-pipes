@@ -1,2 +1,3 @@
 # language-independence-using-python-and-pipes
-Simplest way to pass messages between two processes - using nix pipes and python subprocess module
+Simplest way to facilitate back and forth message passing;
+uses nix pipes and python subprocess module
