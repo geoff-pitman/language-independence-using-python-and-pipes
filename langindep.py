@@ -6,7 +6,8 @@ sub1py = subprocess.Popen(['python', 'sub1.py'], shell=False, stdin=subprocess.P
 sub2cpp = subprocess.Popen(['./sub2'], shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 # The content of the output is fairly meaningless, other than just demonstrating that you can redirect standard in/out/err.
-# And by doing so, allowing a python script (sub1.py) and a compiled c++ program (sub2) to pass messages back and forth.
+# And by doing so, allowing a script (sub1.py) and a compiled c++ program (sub2) to pass messages back and forth,
+# facilitated by this python script (langindep.py).
 # There is a possibility of deadlocking when using PIPE, especially with stderr (although not likely
 # to happen unless you are putting a strain on the system resources)  
 # For professionial projects use interprocess communication, not IO piping/redirection, to facilitate back and forth communication
