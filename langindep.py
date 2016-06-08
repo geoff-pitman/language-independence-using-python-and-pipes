@@ -21,9 +21,10 @@ for i in range(5):
   outputsub1 = str(sub1py.stdout.readline())
   print "sub1py received: " + str(outputsub1)
   time.sleep(1)
-  sub1py.kill()
-  sub2cpp.kill()
-  exit()
+  
+sub1py.kill()
+sub2cpp.kill()
+exit()
  
     
    
